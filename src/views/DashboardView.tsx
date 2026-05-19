@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { ProgressRing } from '../components/ProgressRing';
 import { useSessionStore } from '../store/sessionStore';
 import { historicalChartData } from '../data/mockHistoricalData';
@@ -21,8 +20,7 @@ const prevPursuit = historicalChartData[0].pursuit;
 const pursuitImprovement = Math.round(((lastPursuit - prevPursuit) / prevPursuit) * 100);
 
 export default function DashboardView() {
-  const { setView, resetSession, demoMode, toggleDemoMode, startSingleGame, userName } = useSessionStore();
-  const [showDemoPanel, setShowDemoPanel] = useState(false);
+  const { setView, resetSession, startSingleGame, userName } = useSessionStore();
 
   const handleStart = () => {
     resetSession();
