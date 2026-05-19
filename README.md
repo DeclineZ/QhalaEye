@@ -1,6 +1,5 @@
 # QhalaEye
 ![UNSW](https://img.shields.io/badge/UNSW_Sydney-ODOS_Summer_Camp-ffd100)
-![Award](https://img.shields.io/badge/🏆_Winner-Final_Pitch-gold)
 
 **🏆 Awarded 1st place: ODOS Summer Camp (UNSW, Sydney)**
 
