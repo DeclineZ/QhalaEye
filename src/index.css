@@ -1,0 +1,315 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════
+   DESIGN SYSTEM — QhalaEye Medical Light
+   ═══════════════════════════════════════════ */
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Backgrounds */
+  --bg-base: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-muted: #F1F5F9;
+
+  /* Primary palette */
+  --blue-50: #EFF6FF;
+  --blue-100: #DBEAFE;
+  --blue-500: #3B82F6;
+  --blue-600: #2563EB;
+  --blue-700: #1D4ED8;
+  --blue-800: #1E40AF;
+
+  /* Teal accents */
+  --teal-400: #2DD4BF;
+  --teal-500: #14B8A6;
+  --teal-600: #0D9488;
+
+  /* Text */
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+
+  /* Border */
+  --border: #E2E8F0;
+  --border-focus: #2563EB;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, .06), 0 1px 2px rgba(0, 0, 0, .04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, .08), 0 2px 4px rgba(0, 0, 0, .04);
+  --shadow-lg: 0 10px 30px rgba(37, 99, 235, .10), 0 4px 8px rgba(0, 0, 0, .05);
+  --shadow-blue: 0 8px 24px rgba(37, 99, 235, .25);
+}
+
+/* ─── Reset ─── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* tablet — no scroll */
+  font-family: var(--font-sans);
+  background: var(--bg-base);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Touch lock (prevents accidental scroll/swipe during therapy) ─── */
+.touch-lock {
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ─── Layout utility ─── */
+.view-root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ─── Card ─── */
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow-md);
+  padding: 1.5rem;
+}
+
+/* ─── Button ─── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  background: linear-gradient(135deg, var(--blue-600), var(--blue-700));
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+  border: none;
+  border-radius: .875rem;
+  padding: .875rem 2rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-blue);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, .3);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-blue);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: .85rem;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  border-radius: .75rem;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+
+.btn-ghost:hover {
+  background: var(--bg-muted);
+  color: var(--text-primary);
+}
+
+/* ─── Badge ─── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  padding: .2rem .6rem;
+  border-radius: 999px;
+}
+
+.badge-blue {
+  background: var(--blue-50);
+  color: var(--blue-700);
+}
+
+.badge-teal {
+  background: #F0FDFA;
+  color: var(--teal-600);
+}
+
+/* ─── Animations ─── */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.25);
+    opacity: .5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-dot {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, .5);
+  }
+
+  50% {
+    box-shadow: 0 0 0 16px rgba(37, 99, 235, 0);
+  }
+}
+
+@keyframes float-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gaze-ping {
+  0% {
+    transform: scale(1);
+    opacity: .8;
+  }
+
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes target-pulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, .4);
+  }
+
+  50% {
+    box-shadow: 0 0 0 12px rgba(37, 99, 235, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes countdownShrink {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: var(--circ);
+  }
+}
+
+.animate-float-in {
+  animation: float-in .45s ease both;
+}
+
+.animate-fade-in {
+  animation: fadeIn .3s ease both;
+}
+
+/* ─── Gaze dot overlay ─── */
+.gaze-dot {
+  position: fixed;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, .9);
+  border: 3px solid #fff;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: left .06s linear, top .06s linear;
+  box-shadow: 0 2px 12px rgba(37, 99, 235, .5);
+}
+
+.gaze-dot::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 2px solid rgba(37, 99, 235, .35);
+  animation: gaze-ping 1.2s ease-out infinite;
+}
+
+/* ─── Print styles (PDF export) ─── */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  body,
+  html,
+  #root {
+    overflow: visible !important;
+    height: auto !important;
+  }
+
+  .print-page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 16mm;
+    background: #fff !important;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .recharts-wrapper {
+    break-inside: avoid;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+}
