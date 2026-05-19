@@ -9,14 +9,14 @@ QhalaEye is a web application that provides AI-powered vision therapy for strabi
 * Real-time eye tracking using standard webcams
 <img width="1920" height="1080" alt="Calibration" src="https://github.com/user-attachments/assets/653e1928-5487-44b9-a27f-d1dbf62992d3" />
 
-* Eye pursuit theraphy: trains your eyes to smoothly track moving objects, reducing fatigue and improving hand-eye coordination.
+* Eye Pursuit: trains your eyes to smoothly track moving objects, reducing fatigue and improving hand-eye coordination.
 <img width="1920" height="1080" alt="Pursuit" src="https://github.com/user-attachments/assets/91a5095f-a62c-420c-9c44-481bfcf0d230" />
 
 * Eye Saccadic: improves your eyes' ability to make rapid, precise jumps between focal points, which is essential for efficient reading and quick visual scanning.
 <img width="1920" height="1080" alt="Saccadic" src="https://github.com/user-attachments/assets/17531e2c-5a19-41cc-b28a-027fb8e987ee" />
 
 * Eye Pushups: strengthens the muscles used to focus on close objects, improving binocular vision and reducing screen-induced eye strain.
-https://github.com/user-attachments/assets/14e86df2-be74-4462-886d-672689239126
+<video src="https://github.com/user-attachments/assets/14e86df2-be74-4462-886d-672689239126" autoplay loop muted playsinline width="600"></video>
 
 * Clinical dashboard to view progress and analyze eye movement data
 <img width="1920" height="1080" alt="Clinical" src="https://github.com/user-attachments/assets/a9124f28-1225-4656-9555-2a101f552ef7" />
