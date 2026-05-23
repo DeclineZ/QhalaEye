@@ -2,6 +2,7 @@
 ![UNSW](https://img.shields.io/badge/UNSW_Sydney-ODOS_Summer_Camp-ffd100)
 
 **🏆 Awarded 1st place: ODOS Summer Camp (UNSW, Sydney)**
+<img width="3371" height="1028" alt="IMG_1954" src="https://github.com/user-attachments/assets/db2f7f26-8b46-4263-b429-9cc4f796dfce" />
 
 QhalaEye is a web application that provides AI-powered vision therapy for strabismus and oculomotor dysfunction. We built this to help track and improve eye movements using computer vision directly in the browser, making vision therapy more accessible.
 
@@ -64,4 +65,3 @@ Once the server is running, you can open your browser and go to http://localhost
 *   **Narawit Chankhot**
 *   **Nawaphon  Changpuek**
 
-<img width="4032" height="2268" alt="IMG_1954" src="https://github.com/user-attachments/assets/150f676e-e550-4f8f-b510-3008df149692" />
