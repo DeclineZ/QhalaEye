@@ -7,7 +7,7 @@
 
 QhalaEye is a web application that provides AI-powered vision therapy for strabismus and oculomotor dysfunction. We built this to help track and improve eye movements using computer vision directly in the browser, making vision therapy more accessible.
 
-### Features
+## Features
 * Real-time eye tracking using standard webcams
 <img width="1920" height="1080" alt="Calibration" src="https://github.com/user-attachments/assets/653e1928-5487-44b9-a27f-d1dbf62992d3" />
 
@@ -29,7 +29,7 @@ QhalaEye is a web application that provides AI-powered vision therapy for strabi
 
 * Accuracy can be increased by clicking on the correct position during a game
 
-### Tech Stack
+## Tech Stack
 * React 19 and TypeScript
 * Vite for the build process
 * Tailwind CSS for styling
@@ -37,10 +37,10 @@ QhalaEye is a web application that provides AI-powered vision therapy for strabi
 * Webgazer and MediaPipe for eye and face tracking
 * Recharts for clinical data visualization
 
-### Try it out
+## Try it out
 You can check out the live version of the project here: https://odos-qhala-eye.vercel.app/
 
-### Steps to download and run this project locally
+## Steps to download and run this project locally
 To get this running on your own computer, make sure you have Node.js installed, then follow these steps:
 
 1. Clone this repository to your computer:
